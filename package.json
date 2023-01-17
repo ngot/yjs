@@ -1,6 +1,6 @@
 {
-  "name": "yjs",
-  "version": "13.5.44",
+  "name": "yjs-clj",
+  "version": "1.0.0",
   "description": "Shared Editing Library",
   "main": "./dist/yjs.cjs",
   "module": "./dist/yjs.mjs",
@@ -27,14 +27,17 @@
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "module": "./dist/yjs.mjs",
-      "import": "./dist/yjs.mjs",
+      "module": "./dist/yjs.cjs",
+      "import": "./dist/yjs.cjs",
       "require": "./dist/yjs.cjs"
     },
     "./src/index.js": "./src/index.js",
     "./tests/testHelper.js": "./tests/testHelper.js",
     "./testHelper": "./dist/testHelper.mjs",
     "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "files": [
     "dist/yjs.*",
